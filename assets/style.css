@@ -58,7 +58,7 @@ a:hover{ text-decoration: underline; }
   width: 100%;
   object-fit: cover;
   display:block;
-  filter: saturate(1.05) contrast(1.02);
+  filter: brightness(1.1) saturate(1.05) contrast(1.02);
 }
 .hero-overlay{
   position:absolute; inset:0;
