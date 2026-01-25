@@ -52,46 +52,45 @@ a:hover{ text-decoration: underline; }
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   position: relative;
-  min-height: 420px;
+  height: 420px;          /* min-heightではなく固定にすると安定します */
 }
-.hero img{
+
+/* 単一画像のヒーローだけに適用（スライダーの .slide には当てない） */
+.hero > img{
   width: 100%;
   height: 420px;
   object-fit: cover;
   display:block;
   filter: saturate(1.05) contrast(1.02);
 }
+
 .hero-overlay{
   position:absolute; inset:0;
   background: linear-gradient(90deg, rgba(11,18,32,.85) 0%, rgba(11,18,32,.25) 55%, rgba(11,18,32,.1) 100%);
   display:flex; align-items:flex-end;
   z-index: 2;
 }
-.hero-content{ padding: 28px; max-width: 720px; }
-.kicker{ color: var(--accent); font-weight: 650; font-size: 13px; letter-spacing:.4px; }
-.h1{ font-size: 34px; margin: 8px 0 10px; line-height:1.2; }
-.lead{ color: var(--muted); margin: 0 0 16px; }
 
-.hero.slider {
+.hero.slider{
   position: relative;
   height: 420px;
   overflow: hidden;
 }
 
-.hero.slider .slide {
+.hero.slider .slide{
   position: absolute;
   inset: 0;
-  height: 420px;   
-  display: block; 
   width: 100%;
-  height: 100%;
+  height: 100%;           /* これだけに統一 */
   object-fit: cover;
+  display:block;
+  filter: saturate(1.05) contrast(1.02); /* 見た目を揃えたいならここへ */
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
   z-index: 1;
 }
 
-.hero.slider .slide.active {
+.hero.slider .slide.active{
   opacity: 1;
 }
 
