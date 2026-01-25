@@ -6,6 +6,18 @@
   <title>東京大学ソーラーボートレーシング</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
+
+<script>
+  const slides = document.querySelectorAll('.hero.slider .slide');
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 5000); // 5秒ごとに切り替え
+</script>
+
 <body>
 
 <header class="nav">
