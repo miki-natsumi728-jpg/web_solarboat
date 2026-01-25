@@ -62,7 +62,7 @@ a:hover{ text-decoration: underline; }
 }
 .hero-overlay{
   position:absolute; inset:0;
-  background: linear-gradient(90deg, rgba(11,18,32,.55) 0%, rgba(11,18,32,.18) 55%, rgba(11,18,32,.05) 100%);
+  background: linear-gradient(90deg, rgba(11,18,32,.15) 0%, rgba(11,18,32,.05) 55%, rgba(11,18,32,.02) 100%);
   display:flex; align-items:flex-end;
 }
 .hero-content{ padding: 28px; max-width: 720px; }
