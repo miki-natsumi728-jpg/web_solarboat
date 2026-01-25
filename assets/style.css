@@ -1,0 +1,138 @@
+:root{
+  --bg:#0b1220;
+  --card:#111a2e;
+  --text:#e9eefc;
+  --muted:#a9b4d0;
+  --accent:#5fe1ff;
+  --line: rgba(255,255,255,.12);
+  --shadow: 0 18px 50px rgba(0,0,0,.35);
+  --radius: 18px;
+  --max: 1100px;
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background: radial-gradient(1200px 600px at 70% -10%, rgba(95,225,255,.18), transparent 60%),
+              radial-gradient(900px 500px at 0% 10%, rgba(120,120,255,.14), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a{ color: inherit; text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.container{ max-width: var(--max); margin: 0 auto; padding: 20px; }
+
+.nav{
+  position: sticky; top: 0; z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(11,18,32,.6);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 14px 20px; max-width: var(--max); margin:0 auto; }
+.brand{ display:flex; flex-direction:column; }
+.brand b{ font-size: 15px; letter-spacing:.3px; }
+.brand span{ font-size: 12px; color: var(--muted); }
+
+.nav-links{ display:flex; gap:14px; flex-wrap: wrap; }
+.nav-links a{
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+.nav-links a:hover{ border-color: var(--line); text-decoration:none; }
+
+.hero{
+  margin-top: 16px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  position: relative;
+  min-height: 420px;
+}
+.hero img{
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display:block;
+  filter: saturate(1.05) contrast(1.02);
+}
+.hero-overlay{
+  position:absolute; inset:0;
+  background: linear-gradient(90deg, rgba(11,18,32,.85) 0%, rgba(11,18,32,.25) 55%, rgba(11,18,32,.1) 100%);
+  display:flex; align-items:flex-end;
+}
+.hero-content{ padding: 28px; max-width: 720px; }
+.kicker{ color: var(--accent); font-weight: 650; font-size: 13px; letter-spacing:.4px; }
+.h1{ font-size: 34px; margin: 8px 0 10px; line-height:1.2; }
+.lead{ color: var(--muted); margin: 0 0 16px; }
+
+.btns{ display:flex; gap:10px; flex-wrap:wrap; }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(17,26,46,.6);
+  text-decoration:none;
+}
+.btn.primary{
+  border-color: rgba(95,225,255,.35);
+  background: rgba(95,225,255,.10);
+}
+.btn:hover{ text-decoration:none; transform: translateY(-1px); }
+
+.grid{ display:grid; gap: 14px; }
+.grid.two{ grid-template-columns: 1.2fr .8fr; }
+@media (max-width: 900px){
+  .grid.two{ grid-template-columns: 1fr; }
+  .hero img{ height: 460px; }
+}
+
+.card{
+  border: 1px solid var(--line);
+  background: rgba(17,26,46,.55);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+}
+.card-pad{ padding: 18px; }
+.h2{ font-size: 18px; margin: 0 0 8px; }
+.muted{ color: var(--muted); }
+
+.news-list{ display:grid; gap: 12px; }
+.news-item{
+  display:grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(11,18,32,.35);
+}
+.news-item img{
+  width: 140px; height: 90px; object-fit: cover; border-radius: 12px;
+  border: 1px solid var(--line);
+}
+.news-meta{ font-size: 12px; color: var(--muted); }
+.news-title{ font-weight: 700; margin: 2px 0 6px; }
+.news-lead{ color: var(--muted); margin:0; font-size: 14px; }
+
+.footer{
+  margin: 26px 0 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.article h1{ font-size: 28px; margin: 0 0 10px; }
+.article .meta{ color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.article img{ width:100%; border-radius: 16px; border: 1px solid var(--line); }
+.article .body{ margin-top: 14px; color: #d7def6; }
+.article .body h2{ margin-top: 22px; }
+.article .body a{ color: var(--accent); }
