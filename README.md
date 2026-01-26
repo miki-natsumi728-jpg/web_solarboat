@@ -1,1 +1,33 @@
+# 東京大学ソーラーボートレーシング　公式Webサイト
 
+##概要
+プロジェクト概要、活動実績、ニュース、連絡先などを掲載し、随時更新することで、対外的な情報発信の拠点とすることを目的としています。
+
+##公開URL
+公開するには、utokyo.ac.jpの使用許可を東京大学に申請する必要があります。
+この作業は、サイトがある程度完成し次第行うものになります。
+
+現在は、https://miki-natsumi728-jpg.github.io/web_solarboat/index.html　からアクセス可能です。
+
+##使用技術
+静的サイト（動的サイトを作る技術がなかったので）
+- HTML / CSS
+- JavaScript
+- GitHub Pages
+
+## ディレクトリ構成
+```text
+/
+├─ index.html        # トップページ
+├─ about.html        # プロジェクトの紹介
+├─ blog.html         # ニュース一覧
+├─ post.html         # ニュースの追加はここで行う
+├─ contact.html      # メール、インスタ、ユーチューブ　*1
+├─ sponsors.html     # スポンサー
+├─ join us.html      # 新歓
+├─ assets/
+│  └─ style.css      # 共通CSS
+├─ images/           # 画像ファイル、htmlで使用する画像はここにアップロード
+└─ README.md
+
+#　*1 メールはutokyo.yatagarasu3@gmail.comで作成済み、お問い合わせフォームを作ろうと思ったがセキュリティの関係で難しく、一旦断念
