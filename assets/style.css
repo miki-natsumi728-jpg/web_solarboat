@@ -167,204 +167,228 @@ a:hover{ text-decoration: underline; }
 .article .body h2{ margin-top: 22px; }
 .article .body a{ color: var(--accent); }
 
-.voices {
+/* =========================================
+   Student Voices
+========================================= */
+.student-voices {
   padding: 100px 24px;
-  background:
-    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
-    url("images/pattern-bg.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #f3f3f3;
+  background-image:
+    linear-gradient(30deg, rgba(0,0,0,0.04) 12%, transparent 12.5%, transparent 87%, rgba(0,0,0,0.04) 87.5%, rgba(0,0,0,0.04)),
+    linear-gradient(150deg, rgba(0,0,0,0.04) 12%, transparent 12.5%, transparent 87%, rgba(0,0,0,0.04) 87.5%, rgba(0,0,0,0.04)),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 2%, transparent 2.5%, transparent 97%, rgba(0,0,0,0.03) 97.5%, rgba(0,0,0,0.03));
+  background-size: 180px 180px;
+  background-position: 0 0, 0 0, 0 0;
 }
 
-.voices-inner {
-  max-width: 1200px;
+.student-voices-inner {
+  max-width: 1240px;
   margin: 0 auto;
 }
 
-.voices-eyebrow {
+.student-voices-label {
+  margin: 0 0 20px;
   text-align: center;
+  color: #224b9b;
   font-size: 14px;
   letter-spacing: 0.08em;
-  color: #244a99;
-  margin-bottom: 18px;
+  font-weight: 600;
 }
 
-.voices-lead {
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.9;
+.student-voices-intro {
   margin: 0 auto 56px;
-  max-width: 920px;
+  max-width: 980px;
+  text-align: center;
   color: #222;
+  font-size: 17px;
+  line-height: 1.9;
 }
 
-.voice-slider {
+.voices-slider {
   display: grid;
   grid-template-columns: 72px 1fr 72px;
-  align-items: center;
   gap: 16px;
+  align-items: center;
 }
 
-.voice-track-wrap {
+.voices-viewport {
   overflow: hidden;
   width: 100%;
 }
 
-.voice-track {
+.voices-track {
   display: flex;
   transition: transform 0.45s ease;
+  will-change: transform;
 }
 
-.voice-card {
+.voice-slide {
   min-width: 100%;
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 340px 1fr;
   gap: 32px;
   align-items: center;
-  padding: 24px 8px;
-  box-sizing: border-box;
+  padding: 20px 8px;
 }
 
-.voice-image img {
+.voice-photo img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-.voice-content h2 {
-  font-size: clamp(34px, 5vw, 68px);
+.voice-body {
+  max-width: 760px;
+}
+
+.voice-title {
+  margin: 0 0 22px;
+  color: #224b9b;
+  font-size: clamp(34px, 5vw, 70px);
   line-height: 1.2;
-  color: #244a99;
-  margin: 0 0 20px;
   font-weight: 500;
 }
 
-.voice-meta {
-  font-size: 18px;
-  color: #244a99;
-  margin: 0 0 4px;
+.voice-subtitle {
+  margin: 0 0 6px;
+  color: #224b9b;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .voice-name {
+  margin: 0 0 24px;
+  color: #224b9b;
   font-size: 18px;
-  color: #244a99;
   font-weight: 700;
-  margin: 0 0 28px;
+  line-height: 1.6;
 }
 
 .voice-text {
+  margin: 0 0 34px;
+  color: #222;
   font-size: 16px;
   line-height: 2;
-  color: #222;
-  margin: 0 0 32px;
 }
 
-.voice-more {
+.voice-more-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 220px;
-  height: 66px;
-  border: 2px solid #244a99;
+  height: 64px;
+  padding: 0 28px;
+  border: 2px solid #224b9b;
   border-radius: 999px;
-  color: #244a99;
+  color: #224b9b;
   text-decoration: none;
   font-size: 20px;
+  font-weight: 600;
   letter-spacing: 0.08em;
-  transition: 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.voice-more::after {
+.voice-more-btn::after {
   content: "›";
   margin-left: 16px;
   font-size: 32px;
   line-height: 1;
 }
 
-.voice-more:hover {
-  background: #244a99;
+.voice-more-btn:hover {
+  background: #224b9b;
   color: #fff;
 }
 
-.voice-arrow {
-  width: 64px;
-  height: 64px;
+.voices-arrow {
   border: none;
   background: transparent;
-  font-size: 64px;
-  line-height: 1;
   color: #111;
+  font-size: 84px;
+  line-height: 1;
   cursor: pointer;
   padding: 0;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.voice-arrow:hover {
-  opacity: 0.7;
+.voices-arrow:hover {
+  opacity: 0.65;
 }
 
-.voice-dots {
+.voices-dots {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
-.voice-dots button {
+.voices-dots button {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
   border: none;
+  border-radius: 50%;
   background: #b9bfd0;
   cursor: pointer;
   padding: 0;
 }
 
-.voice-dots button.active {
-  background: #244a99;
+.voices-dots button.active {
+  background: #224b9b;
 }
 
-@media (max-width: 900px) {
-  .voice-slider {
+@media (max-width: 980px) {
+  .voices-slider {
     grid-template-columns: 48px 1fr 48px;
     gap: 8px;
   }
 
-  .voice-card {
+  .voice-slide {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
-  .voice-content h2 {
-    font-size: clamp(28px, 8vw, 44px);
+  .voice-body {
+    max-width: 100%;
   }
 
-  .voice-arrow {
-    font-size: 42px;
-    width: 40px;
-    height: 40px;
+  .voice-title {
+    font-size: clamp(30px, 8vw, 48px);
   }
 
-  .voice-more {
-    min-width: 180px;
-    height: 56px;
-    font-size: 18px;
+  .voices-arrow {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
   }
 }
 
-@media (max-width: 600px) {
-  .voices {
+@media (max-width: 640px) {
+  .student-voices {
     padding: 72px 16px;
   }
 
-  .voices-lead {
-    font-size: 14px;
+  .student-voices-intro {
+    font-size: 15px;
     margin-bottom: 36px;
   }
 
-  .voice-meta,
+  .voice-subtitle,
   .voice-name,
   .voice-text {
     font-size: 15px;
+  }
+
+  .voice-more-btn {
+    min-width: 180px;
+    height: 56px;
+    font-size: 18px;
   }
 }
