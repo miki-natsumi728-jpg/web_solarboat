@@ -174,14 +174,17 @@ a:hover{ text-decoration: underline; }
   padding: 100px 24px;
 
   background:
-    linear-gradient(
-      rgba(5, 15, 35, 0.85),
-      rgba(5, 15, 35, 0.95)
-    ),
-    url("images/ocean-dark.jpg");
+    linear-gradient(rgba(5,15,35,0.9), rgba(5,15,35,0.95)),
+    url("images/ocean-dark.jpg"),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px,
+      transparent 6px
+    );
 
-  background-size: cover;
-  background-position: center;
+  background-size: cover, cover, 100% 100%;
 }
 
 .student-voices-inner {
