@@ -6,47 +6,6 @@
   <title>東京大学ソーラーボートレーシング</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-
-<script>
-  (function () {
-    const track = document.getElementById("voicesTrack");
-    const slides = document.querySelectorAll(".voice-slide");
-    const prevBtn = document.querySelector(".voices-prev");
-    const nextBtn = document.querySelector(".voices-next");
-    const dots = document.querySelectorAll("#voicesDots button");
-
-    if (!track || !slides.length || !prevBtn || !nextBtn || !dots.length) return;
-
-    let currentIndex = 0;
-
-    function updateSlider() {
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-      dots.forEach((dot, index) => {
-        dot.classList.toggle("active", index === currentIndex);
-      });
-    }
-
-    prevBtn.addEventListener("click", function () {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      updateSlider();
-    });
-
-    nextBtn.addEventListener("click", function () {
-      currentIndex = (currentIndex + 1) % slides.length;
-      updateSlider();
-    });
-
-    dots.forEach((dot, index) => {
-      dot.addEventListener("click", function () {
-        currentIndex = index;
-        updateSlider();
-      });
-    });
-
-    updateSlider();
-  })();
-</script>
   
 <body>
   
@@ -167,6 +126,47 @@
   <div style="height:14px"></div>
   
 </main>
+
+<script>
+  (function () {
+    const track = document.getElementById("voicesTrack");
+    const slides = document.querySelectorAll(".voice-slide");
+    const prevBtn = document.querySelector(".voices-prev");
+    const nextBtn = document.querySelector(".voices-next");
+    const dots = document.querySelectorAll("#voicesDots button");
+
+    if (!track || !slides.length || !prevBtn || !nextBtn || !dots.length) return;
+
+    let currentIndex = 0;
+
+    function updateSlider() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentIndex);
+      });
+    }
+
+    prevBtn.addEventListener("click", function () {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlider();
+    });
+
+    nextBtn.addEventListener("click", function () {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlider();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", function () {
+        currentIndex = index;
+        updateSlider();
+      });
+    });
+
+    updateSlider();
+  })();
+</script>
   
 </body>
 </html>
