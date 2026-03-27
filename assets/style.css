@@ -183,6 +183,12 @@ a:hover{ text-decoration: underline; }
 .student-voices-inner {
   max-width: 1240px;
   margin: 0 auto;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+
+  padding: 48px;
+  border-radius: 20px;
 }
 
 .student-voices-label {
