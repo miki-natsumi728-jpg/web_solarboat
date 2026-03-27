@@ -264,9 +264,9 @@ a:hover{ text-decoration: underline; }
 }
 
 .voice-title {
-  margin: 0 0 22px;
+  margin: 0 5px 22px 5px;
   color: #224b9b;
-  font-size: clamp(34px, 5vw, 70px);
+  font-size: clamp(24px, 5vw, 50px);
   line-height: 1.2;
   font-weight: 500;
 }
