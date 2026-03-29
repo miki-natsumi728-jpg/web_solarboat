@@ -411,3 +411,18 @@ a:hover{ text-decoration: underline; }
     font-size: 18px;
   }
 }
+
+.sponsor-grid.single{
+  grid-template-columns: 1fr;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.sponsor-card.large{
+  min-height: 220px;
+}
+
+.sponsor-card.large img{
+  max-width: 200px;
+  max-height: 100px;
+}
