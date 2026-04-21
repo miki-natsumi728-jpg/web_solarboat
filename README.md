@@ -31,3 +31,6 @@
 └─ README.md
 
 #　*1 メールはutokyo.yatagarasu3@gmail.comで作成済み、お問い合わせフォームを作ろうと思ったがセキュリティの関係で難しく、一旦断念
+
+## webサイトの現状の確認方法
+Commit Changes →　URL（Settings → Pages
