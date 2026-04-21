@@ -15,6 +15,15 @@
 - JavaScript
 - GitHub Pages
 
+
+# webサイトの現状の確認方法
+Commit Changes（Commit Directly to the main branch) →　URL（Settings → Pages)
+
+##　お願いしたいところ
+基本はCSSをいじってもらってデザイン性向上をお願いします。
+追加したい機能あれば、htmlファイルで追加できます。
+about, contact, sponsors, join usに関してはまだ全然内容も定まっていないので、裁量性高いかと思います。
+
 ## ディレクトリ構成
 ```text
 /
@@ -31,11 +40,3 @@
 └─ README.md
 
 #　*1 メールはutokyo.yatagarasu3@gmail.comで作成済み、お問い合わせフォームを作ろうと思ったがセキュリティの関係で難しく、一旦断念
-
-## webサイトの現状の確認方法
-Commit Changes（Commit Directly to the main branch) →　URL（Settings → Pages)
-
-##　お願いしたいところ
-基本はCSSをいじってもらってデザイン性向上をお願いします。
-追加したい機能あれば、htmlファイルで追加できます。
-about, contact, sponsors, join usに関してはまだ全然内容も定まっていないので、裁量性高いかと思います。
