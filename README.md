@@ -21,16 +21,21 @@
 ├─ index.html        # トップページ
 ├─ about.html        # プロジェクトの紹介
 ├─ blog.html         # ニュース一覧
-├─ post.html         # ニュースの追加はここで行う
+├─ post.html         # ニュースの追加はここで行う 
 ├─ contact.html      # メール、インスタ、ユーチューブ　*1
 ├─ sponsors.html     # スポンサー
-├─ join us.html      # 新歓
+├─ join us.html      # 新歓 #今ここに先輩たちの声を入れている途中、PCだと大丈夫だがスマホだと文字の大きさが追従しない、背景の写真とカバーのぼかし具合により文字が目立たない
 ├─ assets/
-│  └─ style.css      # 共通CSS
+│  └─ style.css      # 共通CSS #デザインはここ
 ├─ images/           # 画像ファイル、htmlで使用する画像はここにアップロード
 └─ README.md
 
 #　*1 メールはutokyo.yatagarasu3@gmail.comで作成済み、お問い合わせフォームを作ろうと思ったがセキュリティの関係で難しく、一旦断念
 
 ## webサイトの現状の確認方法
-Commit Changes →　URL（Settings → Pages
+Commit Changes（Commit Directly to the main branch) →　URL（Settings → Pages)
+
+##　お願いしたいところ
+基本はCSSをいじってもらってデザイン性向上をお願いします。
+追加したい機能あれば、htmlファイルで追加できます。
+about, contact, sponsors, join usに関してはまだ全然内容も定まっていないので、裁量性高いかと思います。
