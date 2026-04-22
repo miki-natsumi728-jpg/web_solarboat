@@ -7,7 +7,7 @@
 公開するには、utokyo.ac.jpの使用許可を東京大学に申請する必要があります。
 この作業は、サイトがある程度完成し次第行うものになります。
 
-現在は、https://miki-natsumi728-jpg.github.io/web_solarboat/index.html　からアクセス可能です。
+現在は、https://miki-natsumi728-jpg.github.io/web_solarboat/index.html からアクセス可能です。
 
 ##使用技術
 静的サイト（動的サイトを作る技術がなかったので）
