@@ -56,6 +56,21 @@
     </div>
   </div>
 　</section>
+</main>
+
+<script>
+// Hamburger menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (!hamburger || !navLinks) return;
+
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+  });
+});
+</script>
 
 </body>
 </html>
