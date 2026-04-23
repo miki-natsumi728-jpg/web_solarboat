@@ -298,7 +298,18 @@ a:hover{ text-decoration: underline; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  min-width: 220px;
+  height: 64px;
+  padding: 0 28px;
+  border: 2px solid #224b9b;
+  border-radius: 999px;
+  color: #224b9b;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
 /* Hamburger Menu Styles */
 .hamburger {
   display: none;
@@ -395,18 +406,6 @@ a:hover{ text-decoration: underline; }
   .brand span {
     font-size: 11px;
   }
-}
-  min-width: 220px;
-  height: 64px;
-  padding: 0 28px;
-  border: 2px solid #224b9b;
-  border-radius: 999px;
-  color: #224b9b;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 .voice-more-btn::after {
