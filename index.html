@@ -26,6 +26,11 @@
       <a href="join us.html">Join Us</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <button class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
 
@@ -109,6 +114,16 @@ async function loadLatest(){
   `).join("");
 }
 loadLatest();
+
+// Hamburger menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+  });
+});
 </script>
 
 </body>
