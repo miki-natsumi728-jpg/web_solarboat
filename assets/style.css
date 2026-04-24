@@ -349,7 +349,7 @@ a:hover{ text-decoration: underline; }
 }
 
 /* Responsive Design */
-@media (max-width: 835px) {
+@media (max-width: 851px) {
   .nav-links {
     display: none;
     position: absolute;
