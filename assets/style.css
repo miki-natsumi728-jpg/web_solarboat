@@ -10,7 +10,7 @@
   --max: 1100px;
 }
 
-*{ box-sizing:border-box; }
+*{ box-sizing:border-box; /*border:2px solid red;*/} /*for debug*/
 html,body{ margin:0; padding:0; }
 body{
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", sans-serif;
@@ -33,6 +33,12 @@ a:hover{ text-decoration: underline; }
   border-bottom: 1px solid var(--line);
 }
 .nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 14px 20px; max-width: var(--max); margin:0 auto; }
+/*苦肉の策*/
+@media(max-width:370){
+  .nav-top{
+    height: 20px;
+  }
+}
 .nav-top{ display:flex; align-items:center; justify-content:space-between; gap:12px;  max-width: var(--max); margin:0 auto;}
 .brand{ display:flex; flex-direction:column; }
 .brand b{ font-size: 15px; letter-spacing:.3px; white-space: nowrap;}
@@ -86,9 +92,9 @@ a:hover{ text-decoration: underline; }
   flex-direction: column;
   align-items:center;
 }
-.h1_hero{ font-size: clamp(20px,2.5vw + 0.4rem,32px);
+.h1_hero{ font-size: clamp(20px,2.5vw + 0.5rem,32px);
   font-weight: 500;
-  margin: 8px -3px 10px -3px; 
+  margin: 8px 0 10px 0; 
   line-height:1.4;
   letter-spacing: 0.05em;
   text-shadow: 0 1px 2px rgba(0,0,0,0.4);
@@ -374,18 +380,6 @@ a:hover{ text-decoration: underline; }
     display: flex;
   }
 
-  .hero-content {
-    padding: 20px;
-  }
-
-  /*.h1 {
-    font-size: 28px;
-  }*/
-
-  /*.lead {
-    font-size: 14px;
-  }*/
-
   .news-item {
     grid-template-columns: 1fr;
   }
@@ -399,7 +393,6 @@ a:hover{ text-decoration: underline; }
   .container {
     padding: 10px;
   }
-
   .nav-inner {
     padding: 10px 20px;
   }
@@ -414,23 +407,16 @@ a:hover{ text-decoration: underline; }
   }
 }
 
-/*@media (max-width: 480px) {
-  .hero--full {
-    min-height: 400px;
-  }
+@media(max-width:370px){
+.nav-inner{
+  padding: 10px 10px;
+}
+.nav-top{
+  width:100px;
+  height:auto;
+}
+}
 
-  .h1 {
-    font-size: 24px;
-  }
-
-  .brand b {
-    font-size: 14px;
-  }
-
-  .brand span {
-    font-size: 11px;
-  }
-} */
 
 .voice-more-btn::after {
   content: "›";
