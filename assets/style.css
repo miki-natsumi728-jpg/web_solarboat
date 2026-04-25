@@ -22,6 +22,9 @@ body{
   line-height: 1.65;
 }
 
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
 a{ color: inherit; text-decoration: none; }
 a:hover{ text-decoration: none; }
 
@@ -572,6 +575,26 @@ a:hover{ text-decoration: none; }
     min-width: 180px;
     height: 56px;
     font-size: 18px;
+  }
+
+  .desktop-only { display: none; }
+  .mobile-only { display: flex; }
+
+  .voices-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .voices-viewport {
+    order: 1;
+  }
+
+  .arrows-container {
+    order: 2;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
   }
 }
 
