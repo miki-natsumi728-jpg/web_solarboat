@@ -3,6 +3,7 @@
   --card:#111a2e;
   --text:#e9eefc;
   --muted:#a9b4d0;
+  --copyright:#666666;
   --accent:#5fe1ff;
   --line: rgba(255,255,255,.12);
   --shadow: 0 18px 50px rgba(0,0,0,.35);
@@ -22,9 +23,9 @@ body{
 }
 
 a{ color: inherit; text-decoration: none; }
-a:hover{ text-decoration: underline; }
+a:hover{ text-decoration: none; }
 
-.container{ max-width: var(--max); margin: 0 auto; padding: 20px; }
+.container{ max-width: var(--max); margin: 0 auto; padding: 20px; min-height:100vh;}
 
 .nav{
   position: sticky; top: 0; z-index: 10;
@@ -181,15 +182,69 @@ a:hover{ text-decoration: underline; }
 }
 .news-meta{ font-size: 12px; color: var(--muted); }
 .news-title{ font-weight: 700; margin: 2px 0 6px; }
-.news-lead{ color: var(--muted); margin:0; font-size: 14px; }
+.news-lead{ color: var(--muted); margin:0; font-size:14px; }
 
 .footer{
-  margin: 26px 0 18px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 12px;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-top: 1px solid var(--copyright);
+  padding-top: 10px;
 }
+.footer-inner{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: var(--max);
+  margin:auto;
+}
+.footer-container{
+  padding: 10px 0 5vh 5vw;
+}
+.footer-navi-heading{
+  font-weight:600;
+  font-size:clamp(16px,3vw,20px);
+  color:#dddddd;
+  margin:0 0 3px 0;
+}
+.footer-navi{
+  font-size:clamp(14.5px,2vw,17px);
+  display:flex;
+  flex-direction: column;
+  color:var(--muted);
+  gap:5px;
+  a{
+    display:inline-block;
+    width: fit-content;
+  }
+}
+.footer-navi a:hover{
+  text-decoration: none;
+  color:#dddddd
+}
+.footer-copyright{
+  padding: 15px 0 10px 0;
+  color: var(--copyright);
+  font-size: clamp(7px,2vw,12px);
+  border-top: 1px solid rgba(66,66,66,0.7);
+  margin:auto;
+  text-align: center;
+  width: 95vw;
+}
+@media(max-width:600px){
+  .footer-container{
+    width: 50%;
+  }
+  .footer-navi{
+    gap:10px;
+  }
+}
+@media(min-width:601px){
+  .footer-container{
+    flex:1;
+  }
+}
+
 
 .article h1{ font-size: 28px; margin: 0 0 10px; }
 .article .meta{ color: var(--muted); font-size: 13px; margin-bottom: 14px; }
