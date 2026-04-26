@@ -36,18 +36,17 @@ a:hover{ text-decoration: none; }
   background: rgba(11,18,32,.6);
   border-bottom: 1px solid var(--line);
 }
-.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap: clamp(5px, 2vw, 12px); padding: clamp(10px, 3vw, 20px); max-width: var(--max); margin:0 auto; }
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 14px 20px; max-width: var(--max); margin:0 auto; }
 /*苦肉の策*/
 @media(max-width:370){
   .nav-top{
     height: 20px;
   }
 }
-.nav-top{ display:flex; align-items:center; justify-content:space-between; gap: clamp(3px, 1vw, 5px);  max-width: var(--max); margin:0 auto;}
-.nav-top img { width: clamp(50px, 5vw, 70px); height: auto; }
+.nav-top{ display:flex; align-items:center; justify-content:space-between; gap:5px;  max-width: var(--max); margin:0 auto;}
 .brand{ display:flex; flex-direction:column; }
-.brand b{ font-size: clamp(12px, 4vw, 15px); letter-spacing:.3px; white-space: nowrap;}
-.brand span{ font-size: clamp(10px, 3vw, 12px); color: var(--muted); }
+.brand b{ font-size: 15px; letter-spacing:.3px; white-space: nowrap;}
+.brand span{ font-size: 12px; color: var(--muted); }
 
 .nav-links{ display:flex; gap:14px; flex-wrap: wrap; }
 .nav-links a{
@@ -58,13 +57,13 @@ a:hover{ text-decoration: none; }
 .nav-links a:hover{ border-color: var(--line); text-decoration:none; }
 
 .hero{
-  height: 100vh;
+  height: 105vh;
   background-image: url("../images/top1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  margin-top: -90px;
+  margin-top: -95px;
 
   display: flex;
   align-items: center;
@@ -191,7 +190,7 @@ a:hover{ text-decoration: none; }
 .footer{
   width: 100%;
   height: auto;
-  background-color: black;
+  background-color: #0d0e17;
   border-top: 1px solid var(--copyright);
   padding-top: 10px;
 }
@@ -298,8 +297,9 @@ a:hover{ text-decoration: none; }
 .student-voices-label {
   margin: 0 0 20px;
   text-align: center;
-  color: #224b9b;
-  font-size: 14px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  font-size: 30px;
   letter-spacing: 0.08em;
   font-weight: 600;
 }
@@ -308,9 +308,10 @@ a:hover{ text-decoration: none; }
   margin: 0 auto 56px;
   max-width: 980px;
   text-align: center;
-  color: #c6e0ec;
+  color: #fffffff7;
   font-size: 17px;
   line-height: 1.9;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.6);
 }
 
 .voices-slider {
@@ -355,32 +356,35 @@ a:hover{ text-decoration: none; }
 
 .voice-title {
   margin: 0 5px 22px 5px;
-  color: #224b9b;
+  color: rgba(255, 255, 255, 0.825);
   font-size: clamp(24px, 5vw, 50px);
   line-height: 1.2;
   font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  /*text-shadow:1px 1.2px 0 rgba(255,255,255,0.5), -0.5px -0.5px 0 rgba(0,0,0,0.5)*/
 }
 
 .voice-subtitle {
   margin: 0 0 6px;
-  color: #224b9b;
+  color: #fffff77c;
   font-size: 20px;
   line-height: 1.6;
 }
 
 .voice-name {
   margin: 0 0 24px;
-  color: #224b9b;
+  color: #fffff792;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.6;
 }
 
 .voice-text {
   margin: 0 0 34px;
   color: #222;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2;
+  letter-spacing: 0.04em
 }
 
 .voice-more-btn {
@@ -390,9 +394,9 @@ a:hover{ text-decoration: none; }
   min-width: 220px;
   height: 64px;
   padding: 0 28px;
-  border: 2px solid #224b9b;
+  border: 2px solid #c5c8cd;
   border-radius: 999px;
-  color: #224b9b;
+  color: #c5c8cd;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
@@ -410,7 +414,7 @@ a:hover{ text-decoration: none; }
 }
 
 .hamburger span {
-  width: clamp(18px, 7vw, 25px);
+  width: 25px;
   height: 3px;
   background: var(--text);
   margin: 3px 0;
