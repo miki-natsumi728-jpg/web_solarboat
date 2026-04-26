@@ -36,17 +36,18 @@ a:hover{ text-decoration: none; }
   background: rgba(11,18,32,.6);
   border-bottom: 1px solid var(--line);
 }
-.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 14px 20px; max-width: var(--max); margin:0 auto; }
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap: clamp(5px, 2vw, 12px); padding: clamp(10px, 3vw, 20px); max-width: var(--max); margin:0 auto; }
 /*苦肉の策*/
 @media(max-width:370){
   .nav-top{
     height: 20px;
   }
 }
-.nav-top{ display:flex; align-items:center; justify-content:space-between; gap:5px;  max-width: var(--max); margin:0 auto;}
+.nav-top{ display:flex; align-items:center; justify-content:space-between; gap: clamp(3px, 1vw, 5px);  max-width: var(--max); margin:0 auto;}
+.nav-top img { width: clamp(50px, 5vw, 70px); height: auto; }
 .brand{ display:flex; flex-direction:column; }
-.brand b{ font-size: 15px; letter-spacing:.3px; white-space: nowrap;}
-.brand span{ font-size: 12px; color: var(--muted); }
+.brand b{ font-size: clamp(12px, 4vw, 15px); letter-spacing:.3px; white-space: nowrap;}
+.brand span{ font-size: clamp(10px, 3vw, 12px); color: var(--muted); }
 
 .nav-links{ display:flex; gap:14px; flex-wrap: wrap; }
 .nav-links a{
@@ -409,7 +410,7 @@ a:hover{ text-decoration: none; }
 }
 
 .hamburger span {
-  width: 25px;
+  width: clamp(18px, 7vw, 25px);
   height: 3px;
   background: var(--text);
   margin: 3px 0;
