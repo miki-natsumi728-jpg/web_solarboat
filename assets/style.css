@@ -51,10 +51,9 @@ a:hover{ text-decoration: none; }
 .nav-links{ display:flex; gap:14px; flex-wrap: wrap; }
 .nav-links a{
   padding: 8px 10px;
-  border-radius: 12px;
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
-.nav-links a:hover{ border-color: var(--line); text-decoration:none; }
+.nav-links a:hover{ border-color: var(--text); text-decoration:none; }
 
 .hero{
   height: 105vh;
