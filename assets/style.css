@@ -330,6 +330,30 @@ a:hover{ text-decoration: none; color:#e9eefcbe;}
   width:90%;
   font-size:clamp(16px,3vw,18px);
 }
+
+.competition-link{
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.about-background .competition-link:hover{
+  color: #1d4ed8;
+}
+
+.whats-competition-title{
+  margin-top: 20px;
+  margin-left: 3vw;
+  padding: 5px 0 5px 10px;
+  border-left: 5px solid #2563eb;
+  font-weight:700;
+}
+.competition-lead{
+  margin: 10px auto 30px auto;
+  width:90%;
+  font-size:clamp(16px,3vw,18px);
+}
 /*========================
   footer
 ========================*/
